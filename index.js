@@ -1,54 +1,131 @@
-// let data ="Lorem ipson ...... "
-// console.log(data)
+// let b = 1;
+// let a = "2";
 
-// let text; // o'zgaruvchi bor ammo qiymati yo'q
-// console.log(text)// undefine
-// console.log(text1)// varible yoq bolsa error beradi // "name" is not define
-// let a=b=c=3
-// console.log(a,b,c)// 3 3 3
+// let str1 = "webbrain";
+// let str2 = "academy";
 
+// console.log(str1 + str2);
+// console.log(isNaN(a));
 
-let a;  // konfet yoq va qog'ozini ham tashavorgan
-console.log(a) //undefined
-console.log(typeof a) //undefined
-console.log(undefined+1) //NaN
+// console.log(b * a);
+// console.log(+a - b);
 
+// ==========
+// let a = "10";
+// let b = "10.3";
 
-let b = null // konfet yoq va qog'ozi bor 🤕 
-console.log(b) // null 
-console.log(typeof b) //object 
-console.log(null+1) // 1 => yanni arifmetik amal ishlash imkoniga ega bolamiz va istalgan data typga biriktirib ketishimiz mumlin 
+// console.log(Number(b));
+// console.log(Number.parseInt(b));
+// console.log(Number.parseFloat(b));
+// console.log(parseFloat(b));
+// console.log(parseInt(b));
 
-console.log(a == b )//true 
-console.log(a === b )// false 
+// console.log(Number(a));// float bols floa Int bolsa Int
+// console.log(Number.parseInt(a));// Yaxlit qismi kerak bolsa 
+// console.log(Number.parseFloat(a));// Float qiladi 
 
-// let a = Symbol("text")
-// let a = Symbol("text")
+// ==========
+// true = 1, '1',
+// false -> 0,
+// console.log(false == 0);
+// console.log(true == 1);
+// console.log(false == null);
+// console.log(false == undefined);
+// console.log(undefined == null);
 
-// console.log(a == b )//false
-// console.log(a === b )// false 
+// console.log(true == "1");
+// console.log(true == "a");
+// console.log(true == "2");
+// console.log(true == "0");
 
-let arr =["Jon",12,"Doe"] // arryda malumotlar "index" bilan chaqiriladi "umumiy qismi " 
-console.log(arr)// ["Jon",12,"Doe"]
-console.log(arr[0])  //"Jon" ya'ni index orqali chaqiramiz
+// ==========
+// let a = 1;
+// let b = "10";
 
+// console.log(1 + (1 * 1) / 1);
+// console.log(((1 + 1) * 1) / 1);
 
-let obj ={name:Jon , id: 1} // key 
-console.log(obj) //{name:Jon , id: 1}
-console.log(obj.name) // "Jon" key orqali chaqiramiz
+// ========== --, ++
+// a++
+// a = a+1
 
-const test=()=> {
-console.log(obj)
-console.log(obj.name)
-}
-test()
+// let a = 11; //1
+// console.log(a--); //11
+// console.log(a); // 12
+// console.log(++a); //13
+// console.log(a); // 13
+// console.log(a++); // 13
+// console.log(a++); // 14
+// console.log(++a); // 16
 
+// ==========
 
-// let a = 1 
-// let a = 1
-console.log(a === a ) // true "Primitive" data
-// valueni taqqoslaydi 
-console.log({b} == {a} ) // false "Non-primitive" data 
-// linkni taqqoslaydi 
-// biz Stack dagi joyni taqqoslaymiz ammo non-primitivening 
-// qiymati Heapda boladi
+// Obrivations
+// let a = 50;
+
+// a = a + 10; // 50+10=60
+// a += 10; // 60+10=70  qisqa yoli   
+
+// console.log(a);
+
+// ==========
+// Comparision
+// let a = 10;
+// let b = 11; //number
+// let c = "11"; // string
+
+// =,
+//  ==,// Qiymatini taqqoslaydi
+//  == //  Data typni ham tekshiradi 
+
+// console.log(a > b);
+// console.log(a < b);
+// console.log(c < b);
+// console.log(c <= b);
+// console.log(c >= b);
+// console.log(c == b);
+// console.log(c === b);
+// console.log(c =< b); wrong syn
+
+// let str1 = "A";
+// let str2 = "a";
+
+// console.log(str1 > str2);
+// console.log(str1 < str2);
+// console.log("sutr1" < "str2");
+
+// let a = 1;
+// let b = 1;
+// let check = true;
+
+// console.log(a == b); // !=
+// console.log(a === b); //!==
+// console.log(a != b);
+// console.log(check);
+// console.log(!check);
+
+// ==========
+// Logical Operations
+// OR ||
+// let ceo = false;
+// let admin = true;
+
+// console.log(time === true || ceo === true);
+// console.log(false || true);
+// console.log(admin || ceo);
+
+// let time = 11;
+// console.log(admin === true || ceo === true);
+
+// AND &&
+
+// Europe
+let id = false;
+let face = true;
+
+// uzbek
+let galustik = true;
+let soqol = true;
+let pul = true;
+
+console.log(galustik && soqol && pul);
