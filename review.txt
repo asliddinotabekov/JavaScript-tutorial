@@ -1,0 +1,102 @@
+JavaScript Darslari 
+
+### 1. JavaScript Darslari
+
+```jsx
+let data ="Lorem ipson ...... "
+console.log(data)
+
+let text; // o'zgaruvchi bor ammo qiymati yo'q
+console.log(text)// undefine
+console.log(text1)// varible yoq bolsa error beradi // "name" is not define
+let a=b=c=3
+console.log(a,b,c)// 3 3 3
+```
+
+### 4.  Data Types 8 ta
+
+- **Primitive**
+    
+    **Primitive data typlar `value` qaytaradi** 
+    
+    1. Number  ⇒ raqamlar , 9007199254740992
+    2. BigInt ⇒ 9007199254740992 “n” is bigint
+    3. String ⇒ “ ” , ‘ ’, ` `  ⇒ shu belgini ichidagi barch narsalar string
+    4. Boolean ⇒ 2ta qiymati mavjud **`*true*`** yoki `**false**`
+    5. Null ⇒ 
+        1. **Null  VS**  **Undefined**  deyarli birxil 
+        
+        ```jsx
+        let a;  // konfet yoq va qog'ozini ham tashavorgan
+        console.log(a) //undefined
+        console.log(typeof a) //undefined
+        console.log(undefined+1) //NaN
+        
+        let b = null // konfet yoq va qog'ozi bor 🤕 
+        console.log(b) // null 
+        console.log(typeof b) //object 
+        console.log(null+1) // 1 => yanni arifmetik amal ishlash imkoniga ega bolamiz va istalgan data typga biriktirib ketishimiz mumlin 
+        
+        console.log(a == b )//true 
+        console.log(a === b )// false 
+        ```
+        
+    6. Undefine ⇒ o’zgaruvchi bor ammo valuesi yo’q
+    7. Symbls ⇒ bu bizga unique id yasab beradi 
+        
+        ```jsx
+        let a = Symbol("text")
+        let a = Symbol("text")
+        
+        console.log(a == b )//false
+        console.log(a === b )// false 
+        ```
+        
+- **Non-primitive**
+    
+    **Non-primitiv data typlar `referens`    (”Link”)** qaytaradi yani **valuesi** aloxida joyga ****joylashgan  ammo bizga **link** qaytaradi
+    
+    1. Object ⇒ none primitive data typlar referensga qarab ma’lumotni chaqirish  null object emas typof qilsak object chiqaradi
+        1. Arry 
+        2. object 
+        3. function 
+    
+    <aside>
+    💡 O’zi JavaScript objectdan tashkil topgan
+    
+    </aside>
+    
+    > object data typlarni katta furaga o’xshtish mumkin yani containerdeyish mumkin 
+    function ⇒ ma’lum bir codelarni toplami
+    > 
+    
+    ```jsx
+    let arr =["Jon",12,"Doe"] // arryda malumotlar "**index**" bilan chaqiriladi "umumiy qismi " 
+    console.log(arr)// ["Jon",12,"Doe"]
+    console.log(arr[0])  //"Jon" ya'ni **index** orqali chaqiramiz
+    
+    let obj ={name:Jon , id: 1} // key 
+    console.log(obj) //{name:Jon , id: 1}
+    console.log(obj.name) // "Jon" **key** orqali chaqiramiz
+    
+    const test=()=> {
+    console.log(obj)
+    console.log(obj.name)
+    }
+    test()
+    ```
+    
+- **Non-primitive  VS  Primitive**
+    
+    **Non-primitiv data typlar `referens`    (”Link”)** qaytaradi yani **valuesi** aloxida joyga ****joylashgan  ammo bizga **link** qaytaradi 
+    
+    **Primitive data typlar `value` qaytaradi**
+
+    let a = 1 
+let a = 1
+console.log(a === a ) // true "Primitive" data
+// valueni taqqoslaydi 
+console.log({b} == {a} ) // false "Non-primitive" data 
+// linkni taqqoslaydi 
+// biz Stack dagi joyni taqqoslaymiz ammo non-primitivening 
+// qiymati Heapda boladi
