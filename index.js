@@ -1,110 +1,188 @@
-    // let i = 1
-    // while(i<7){
-    //     console.log(i)
-    //     i ++ 
+
+    // obj = {name: "Asliddin "}
+    // obj1 = {name: "Asliddin "}
+    // obj2= obj 
+    // // obj2 = {child:{name:"asljons"}}
+    // obj = null 
+    // console.log(obj)// null 
+    // console.log(obj2)//  { name: 'Asliddin ' }
+
+    // let user = {
+    //     name:"Asliddin" ,
+    //     saidHi : function () { 
+    //         return ()=> {
+    //             console.log(`Hi, ${this.name}`);
+    //         }
+    //     }
     // }
+    //     user.saidHi()()
 
-    // do{
-    //     console.log(i)
-    //     i--
-    // }while(i == 0)
-// let names = "Tashqi"
-//     const test =()=>{
-//          names = "Ichki"
-//         console.log(names)
+        // let user = {
+//   name: "webbrain",
+//   sayHi() {
+//     // console.log(`Hi, ${user.name}`);
+//     console.log(`Hi, ${this.name}`);
+//   },
+//   getName: function () {
+//     return () => {
+//       console.log(`Hi, ${this.name}`);
+//     };
+//   },
+// };
+
+// // user.sayHi();
+// let usr = user;
+// // user = null;
+// // usr.sayHi();
+
+// usr.getName()();
+
+// function getName(name){
+//     this.name =name
+//     this.sayHi = ()=>{
+//         return this
+//     }
+//     // console.log(this)
 // }
-// test()
-// console.log(names)
-      
-// function func() {
-//     let a = 'Geeks';
-     
-//     if (true) {
-//          a = 'GeeksforGeeks';  // New value assigned
-//         console.log(a);
-//     }
-     
-//     console.log(a);
+// console.log( new getName("eshmat").name) // functoin o'zini nazarda tutadi 
+// console.log( new getName("toshmat").sayHi()) 
+// // local varibleni glabal holatda ham foysdalana olamiz 
+
+// new getName() // func ichidagi ma'lumotni nazarda tutadi 
+
+// let id = Symbol("id")
+// let id1 = Symbol("id1")
+// let id2 = Symbol("id2")
+// let name = "symble"
+// let obj = {
+//     [id] : "Asliddin", //  Symbol("id"): "Asliddin", => ga teng     
+//     [id1] :24523, 
+//     [id2] :"Otabekovsss", // dynamic
+//     id2 :"Otabekov", // teng
+//     ["id2"] :"Otabekov",// teng
+//     'id2' :"Otabekov",// teng
+//     [name] : "qale "
 // }
-// func();
+// // biz get qilishda ham set qilishda ham [] foydalanishimiz mumkin 
+// // console.log(obj[id1])
 
-// var a = 'Geeks "A"';
-// let b = 'Geeks "B"';
-// function func() {
-     
-//     if (true) {
-//          a = 'Copy ""a""'; // Legal Shadowing
-//          b = 'Copy ""b""'; // Illegal Shadowing
-//         console.log(a); // It will print 'GeeksforGeeks'
-//         console.log(b); // It will print error
+
+// let obj = {
+//     name : "Ali", 
+//     title :'Axmat Uz ', 
+//     age : 18 , 
+//     child: {
+//         name: "Asad", 
+//         surname : 'Akbarjon'
 //     }
 // }
-// func();
-// console.log(a)
-// console.log(b)
 
-// const telegram =(name , surname)=>{
-//     console.log(name,surname || "")
-// }
-// telegram("aslsa",)
+// let {name: newName, age , title ,child, child:{name, surname}} = obj
+// // agar biz : keyin {} yozsak ichidagini nazarda tutadi o'zini yozadigan bolsak o'ziini nazarda tutadi 
+// // doim takrorlanadigan kodeni oldini olish uchun biz objectning ichidan ajratib olishga aytiladi va distructure bolgan ma'lumot xuddi varible yasalganga o'xshaydi     
 
-// function outer(b,c) {
-//     function inner(a=c) {
-            
-//           console.log(a+b);
-//      }
-//     return inner();
-//  }
-//  outer(11,2)
-// ================================== function with return ==============================================================//
-
-// const getGpa = (a=0,b=0,c=0,d=0)=>(a+b+c+d)/4
-
-// console.log(getGpa(12,21,21,32)) 
-// let Info ={
-//     name: "Asliddin",
-//     age : 18,
-//     founded: 2022
-//     }
-//     Info.name = "Hasan"
-//     console.log(Info.name) // Hasan
-
-
-// let name = "Sdfafasfa"
-// let age = 12
-//     let Info ={
-//         name:name,
-//         age : age ,
-//         }
-//         console.log(Info)
+// console.log(surname)
 
 
 
-// const In1 ={
-//     name: "Asliddin", 
-//     age:18
-//     }
-//     const In2 ={
-//     name: "Asliddin", 
-//     age:18
-//     }
-//     const In3=In1
-
-//         console.log(In1 === In2); // false
-//         console.log(In1 === In3); // true
+// let obj1 = {
+//     name : "Ali", 
+//     title :'Axmat Uz ', 
     
-    const In1 ={
-        name: "Asliddin", 
-        age:18
-        }
-    
-        const In3={}
-        Object.assign(In3,In1)
-        console.log(In3)// { name: 'Asliddin', age: 18 }
+// }
+
+// let obj2 ={
+//     age : 18 , 
+//     child: {
+//         names: "Asad", 
+//         surname : 'Akbarjon'
+//     },
+// }
+
+// Object.assign(obj1,obj2)
+// console.log(obj1)
+// obj3 = {...obj1,...obj2.child}
+
+// console.log(obj3)
+
+// let a = 0 || 20
+// console.log(a);
+
+// let obj = {a: 1 , b:2}
+
+// let {a:first,b:second} = obj
+// console.log(second)
+// let x =  true + '1'
+// console.log(x)
+
+// const obj = {
+//     name: "Asl"
+// }
+
+// const newObj = {}
+// Object.assign(newObj,obj) // 1-usul 
+
+// =========================
+
+// const newObj = structuredClone(obj)
+// =========================
+
+// const newObj = {...obj}
+
+// console.log(newObj === obj);
+
+// let num = [1,2,3,4,5,6,6]
+// let sum = null 
+// num.map((value,index)=>{
+//     sum += value 
+// })
+// console.log(sum)
+
+// console.log(9_999_999_999_999_999)
+// console.log(Math.sign('-01'));
+// console.log(Math.sign('101'));
+// console.log(Math.sign(-0));
+// console.log(Math.sign(0));
+// console.log(Math.sign("1212e2"));
+// let str = "endklaskf;dsk00c \t cda"
+// str.substring()
+// console.log(str)
+// console.log(0.1 + 0 );
+let str = "webwakhfi;oh1e;;;;wdfnsd"
 
 
-            console.log(In1 === In3); // false                              
+const harf=(str)=>{
+    let b= {} 
 
-    for(let i in In1 ){
-        console.log(In1[`${i}`])
+for (i of str){
+    if (i in b){
+        console.log(b[i] += 1);
+    } else{
+
+        b[i] = 1
     }
+
+    
+    
+}
+ return b
+
+
+}
+// console.log(harf(str))
+
+// console.log(Object.is("saasa","saas"))
+console.log(isNaN("1a"));
+
+const sss =(srt)=>{
+    let numstr = ""
+    for (i of str){
+
+        if(!isNaN(i)){
+            numstr += i
+            console.log(i)
+        }
+    }
+    return Number(numstr)
+}
+console.log(sss(str))

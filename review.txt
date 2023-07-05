@@ -1,0 +1,7 @@
+                =========================================       7-dars ================================================
+
+Basic 
+Javascript - 7 
+Object - 2
+global collection 
+    memory allocation , call stack 
