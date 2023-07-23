@@ -244,3 +244,126 @@
 // accept()
 
 // ===========================================================================================================================// 
+
+
+// const ran =(min,max)=>{
+//     let half =Math.ceil(Math.random()*max)
+//     if (half < min){
+//         half = Math.round(max- half * 0.7)
+//         console.log(half ,"falshif")
+//     }else{
+//         console.log(half,"origin")
+//     }
+
+// }
+// ran(100,500)
+// ===========================================================================================================================// 
+
+// let num = 17
+// let biner = num.toString(2)
+// let bir = null
+// let nol = null
+// for(i of biner){
+//     +i ? bir ++ :nol ++ 
+// }
+// console.log(bir,nol);
+// console.log(biner)
+
+// let sr ={}
+// let sr1 ={}
+// console.log(sr === sr1);
+// ===========================================================================================================================// 
+
+// let str  = "Asliddin otabekov"
+// console.log(str.localeCompare("as"))
+// const LocCom =(str,search)=>{
+//     let result = str.localeCompare(search)
+//     let sss = ""
+//     switch(result){
+//         case 1 : return "Qisman Mavjud" ; break
+//         case 0 : return "toliq mavjud" ; break
+//         case -1 : return "Mavjud emas"; break
+//     }
+// }
+
+// console.log(LocCom(str, "as"));
+
+// x
+
+
+
+
+
+
+ 
+
+
+
+// let d = 12121.212121
+//  console.log(d.toFixed(3));
+//  let str = String("aaaasss")
+//  console.log(str.toUpperCase());
+
+// const Wb =(num1 , num2)=>{
+//     let max = Math.max(num1, num2)
+//     let min = Math.min(num1, num2)
+//     return max-min
+// }
+// console.log(Wb(12,211))
+
+// let a = "122.2a21"
+// console.log(Number(a))
+// console.log(Number.parseInt(a))
+// console.log(Number.parseFloat(a))
+
+// console.log(str[-1]) // A 
+// console.log(str.at(-2)) // A 
+// console.log(str.charAt(1)) // 
+
+
+
+
+let str = "webbaQ^1dfualsfkjladsfhaslfh8734012432984122@!@@!&*^@*a!12=-1"
+const Letter =(char, )=>{
+    let result = {}
+    result.number= char.match(/[0-9]/g).length;
+    result.letter= char.match(/[a-zA-Z]/g).length;
+    result.character = char.length - (result.number + result.letter)
+    return result
+}
+
+console.log(Letter(str)) 
+
+const Letter2 =(str)=>{
+    let result = {number : null, str:null , char :null }
+    for(i of str ){
+        if(isFinite(i)) {
+            result.number ++
+        }
+        else if(i.toUpperCase() !== i.toLowerCase()) {
+            result.str ++
+        }
+        else {
+            result.char ++
+        }
+    }
+    return result
+}
+console.log(Letter2(str) ,"dwqdq") 
+
+// ====================================================
+
+// let cashback = "$12$210$"
+
+// const Cash =(cash)=>{
+//     let res = cash.replace(/[$]/ig, "")
+//     return +res
+// }
+// console.log(Cash(cashback));
+
+let name = "Asliddin Bro free code"
+
+const trunce =(str,n)=>{
+    return str.substr(0,n)
+}
+console.log(trunce(name,3)    )

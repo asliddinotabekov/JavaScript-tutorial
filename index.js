@@ -148,41 +148,32 @@
 // str.substring()
 // console.log(str)
 // console.log(0.1 + 0 );
-let str = "webwakhfi;oh1e;;;;wdfnsd"
+// let str = "we;wdfnsd"
 
 
-const harf=(str)=>{
-    let b= {} 
-
-for (i of str){
-    if (i in b){
-        console.log(b[i] += 1);
-    } else{
-
-        b[i] = 1
-    }
-
-    
-    
-}
- return b
-
-
-}
+// const harf=(str)=>{
+//     let result= {}  
+//     for (i of str) i in result ? result[i]++ : result[i] = 1
+//     return result
+// }
 // console.log(harf(str))
 
-// console.log(Object.is("saasa","saas"))
-console.log(isNaN("1a"));
+// // console.log(Object.is("saasa","saas"))
+// console.log(isNaN("1a"));
 
-const sss =(srt)=>{
-    let numstr = ""
-    for (i of str){
+// const sss =(srt)=>{
+//     let numstr = ""
+//     for (i of str){
 
-        if(!isNaN(i)){
-            numstr += i
-            console.log(i)
-        }
-    }
-    return Number(numstr)
-}
-console.log(sss(str))
+//         if(!isNaN(i)){
+//             numstr += i
+//             console.log(i)
+//         }
+//     }
+//     return Number(numstr)
+// }
+// console.log(sss(str))
+
+let sl = "asasas"
+ sl =sl.substr(0,sl.length -1)
+console.log(sl);
